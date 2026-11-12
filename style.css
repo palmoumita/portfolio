@@ -1,0 +1,195 @@
+*{box-sizing:border-box;margin:0;padding:0}
+
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;
+        color:#172033;line-height:1.65}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,90%);margin:auto}
+    .header{
+        border-bottom:1px solid #edf0f5;
+        background:#fff;
+        position:sticky;
+        top:0;z-index:10}
+    .nav,.footer-inner{height:76px;display:flex;
+        align-items:center;justify-content:space-between}
+    .logo{font:700 1.8rem 'Space Grotesk';letter-spacing:-2px}
+    .logo span,h1 span,h2 span{color:#6c63ff}
+    .nav-links{
+        display:flex;
+        gap:34px;
+        list-style:none;
+        font-weight:600;
+        font-size:.94rem}
+    .nav-links a:hover,.footer a:hover{color:#6c63ff}
+    .menu-toggle{
+        display:none;
+        background:none;
+        border:0;
+        font-size:1.4rem}
+    .hero{
+        min-height:620px;
+        display:grid;
+        grid-template-columns:1.1fr .9fr;
+        align-items:center;
+        gap:50px;
+        padding-top:65px;
+        padding-bottom:65px}
+    .eyebrow{
+        font-size:.75rem;
+        font-weight:700;
+        letter-spacing:2px;
+        color:#777b8c;
+        margin-bottom:18px}
+    .eyebrow span{
+        display:inline-block;
+        width:8px;height:8px;
+        background:#24bd91;
+        border-radius:50%;
+        margin-right:8px}
+    h1,h2,h3{
+        font-family:'Space Grotesk',sans-serif;
+        line-height:1.15;letter-spacing:-1.5px}
+    h1{font-size:clamp(2.8rem,5.4vw,4.7rem)}
+    h2{font-size:clamp(2.1rem,4vw,3.2rem)}
+    .intro{
+        font-size:1.1rem;color:#697084;
+        max-width:520px;margin:24px 0 28px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+    .btn{display:inline-flex;
+        align-items:center;
+        gap:12px;
+        padding:13px 21px;
+        border-radius:8px;
+        font-weight:700}
+    .primary{
+        background:#6c63ff;
+        color:#fff}
+    .primary:hover{background:#554be8}
+    .secondary{border:1px solid #dce0e9}
+    .socials{
+        display:flex;
+        gap:22px;
+        margin-top:35px;
+        font-size:1.25rem;
+        color:#687086}
+    .hero-art{
+        height:400px;
+        position:relative;
+        display:grid;
+        place-items:center}
+    .art-circle{
+        width:310px;
+        height:310px;
+        border-radius:50%;
+        background:linear-gradient(135deg,#e8e6ff,#d8f7ed);
+        position:absolute}
+    .art-center{
+        z-index:1;width:205px;
+        height:205px;
+        background:#fff;
+        border-radius:50%;
+        box-shadow:0 20px 60px #34345a20;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center}
+    .art-center span{
+        font:700 4rem 'Space Grotesk';
+        color:#6c63ff}
+    .art-center small{
+        font-size:.55rem;
+        letter-spacing:1.5px;
+        color:#85899a}
+    .art-card{position:absolute;
+        z-index:2;background:white;
+        padding:15px 19px;
+        border-radius:12px;
+        box-shadow:0 12px 35px #20244a18;
+        font-weight:700;
+        display:flex;
+        gap:10px;
+        align-items:center}
+    .art-card i{color:#6c63ff}
+    .card-one{top:60px;left:0}
+    .card-two{bottom:65px;right:0}
+    .section{padding-top:100px;padding-bottom:100px}
+    .soft{background:#f7f8fc}
+    .about-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:70px}
+    .about-copy{color:#697084}
+    .about-copy p+p{margin-top:14px}
+    .skills,.tags{
+        display:flex;gap:9px;
+        flex-wrap:wrap;margin-top:22px}
+    .skills span,.tags span{
+        background:#eeedff;
+        color:#5951d6;
+        border-radius:30px;
+        padding:6px 12px;
+        font-size:.78rem;
+        font-weight:700}
+    .project-grid{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:23px;
+        margin-top:38px}
+    .project-card{
+        border:1px solid #edf0f5;
+        border-radius:14px;
+        overflow:hidden;
+        background:#fff;
+        transition:transform .2s,box-shadow .2s}
+    .project-card:hover{
+        transform:translateY(-5px);
+        box-shadow:0 18px 40px #22243a12}
+    .project-visual{
+        height:190px;
+        display:grid;
+        place-items:center;
+        font-size:3.5rem}
+    .visual-one{background:#e9e7ff;color:#6c63ff}
+    .visual-two{background:#ddf6ee;color:#209d79}
+    .visual-three{background:#fff0df;color:#e59b43}
+    .project-info{padding:24px}
+    .project-type{
+        font-size:.68rem;
+        letter-spacing:1.5px;
+        color:#898da0;
+        font-weight:700}
+    .project-info h3{font-size:1.4rem;margin:7px 0}
+    .project-info>p:not(.project-type){font-size:.9rem;color:#74798a}
+    .tags{margin-top:17px}
+    .tags span{font-size:.68rem}
+    .contact-section{background:#f7f8fc;text-align:center}
+    .contact-inner>p:not(.eyebrow){color:#697084;margin:20px 0 25px}
+    .footer{border-top:1px solid #edf0f5}
+    .footer-inner{height:auto;min-height:85px;gap:20px}
+    .footer p,.footer-inner>a:last-child{font-size:.85rem;color:#777b8c}
+
+    @media(max-width:760px){
+        .menu-toggle{display:block}
+        .nav-links{
+            display:none;
+            position:absolute;
+            top:76px;
+            left:0;
+            right:0;
+            background:white;
+            padding:20px 5%;
+            flex-direction:column;
+            gap:15px;
+            border-bottom:1px solid #edf0f5}
+        .nav-links.open{display:flex}
+        .hero{grid-template-columns:1fr;padding-top:75px}
+        .hero-art{height:320px;grid-row:1}
+        .art-circle{width:250px;height:250px}
+        .art-center{width:165px;height:165px}
+        .art-center span{font-size:3rem}
+        .about-grid{grid-template-columns:1fr;gap:25px}
+        .project-grid{grid-template-columns:1fr}
+        .section{padding-top:70px;padding-bottom:70px}
+        .footer-inner{padding:20px 0;flex-wrap:wrap}
+        .footer p{order:3;width:100%}
+    }
